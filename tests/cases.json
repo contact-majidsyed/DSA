@@ -1,0 +1,227 @@
+[
+  {
+    "package": "practice.arrays_and_hashmaps.two_sum",
+    "title": "Two Sum",
+    "test": "check(Arrays.equals(s.twoSum(new int[]{2,7,11,15},9),new int[]{0,1})); check(Arrays.equals(s.twoSum(new int[]{3,3},6),new int[]{0,1}));"
+  },
+  {
+    "package": "practice.arrays_and_hashmaps.group_anagrams",
+    "title": "Group Anagrams",
+    "test": "List<List<String>> g=s.groupAnagrams(new String[]{\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"}); check(g.size()==3); check(g.stream().anyMatch(x -> x.equals(Arrays.asList(\"eat\",\"tea\",\"ate\")))); check(s.groupAnagrams(new String[]{\"\",\"\"}).get(0).size()==2);"
+  },
+  {
+    "package": "practice.arrays_and_hashmaps.product_of_array_except_self",
+    "title": "Product of Array Except Self",
+    "test": "check(Arrays.equals(s.productExceptSelf(new int[]{1,2,3,4}),new int[]{24,12,8,6})); check(Arrays.equals(s.productExceptSelf(new int[]{0,2,0}),new int[]{0,0,0}));"
+  },
+  {
+    "package": "practice.arrays_and_hashmaps.subarray_sum_equals_k",
+    "title": "Subarray Sum Equals K",
+    "test": "check(s.subarraySum(new int[]{1,2,3},3)==2); check(s.subarraySum(new int[]{0,0,0},0)==6); check(s.subarraySum(new int[]{1,-1,1},1)==3);"
+  },
+  {
+    "package": "practice.arrays_and_hashmaps.maximum_subarray",
+    "title": "Maximum Subarray",
+    "test": "check(s.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4})==6); check(s.maxSubArray(new int[]{-5,-2,-7})==-2);"
+  },
+  {
+    "package": "practice.strings_and_sliding_window.valid_anagram",
+    "title": "Valid Anagram",
+    "test": "check(s.isAnagram(\"listen\",\"silent\")); check(!s.isAnagram(\"aab\",\"abb\")); check(s.isAnagram(\"\",\"\"));"
+  },
+  {
+    "package": "practice.strings_and_sliding_window.longest_substring_without_repeating",
+    "title": "Longest Substring Without Repeating Characters",
+    "test": "check(s.lengthOfLongestSubstring(\"abcabcbb\")==3); check(s.lengthOfLongestSubstring(\"abba\")==2); check(s.lengthOfLongestSubstring(\"\")==0);"
+  },
+  {
+    "package": "practice.strings_and_sliding_window.longest_palindromic_substring",
+    "title": "Longest Palindromic Substring",
+    "test": "check(s.longestPalindrome(\"babad\").equals(\"bab\")); check(s.longestPalindrome(\"cbbd\").equals(\"bb\")); check(s.longestPalindrome(\"\").equals(\"\"));"
+  },
+  {
+    "package": "practice.strings_and_sliding_window.minimum_window_substring",
+    "title": "Minimum Window Substring",
+    "test": "check(s.minWindow(\"ADOBECODEBANC\",\"ABC\").equals(\"BANC\")); check(s.minWindow(\"aa\",\"aa\").equals(\"aa\")); check(s.minWindow(\"a\",\"aa\").equals(\"\")); check(s.minWindow(\"abc\",\"\").equals(\"\"));"
+  },
+  {
+    "package": "practice.strings_and_sliding_window.character_replacement",
+    "title": "Longest Repeating Character Replacement",
+    "test": "check(s.characterReplacement(\"AABABBA\",1)==4); check(s.characterReplacement(\"ABAB\",2)==4); check(s.characterReplacement(\"\",0)==0);"
+  },
+  {
+    "package": "practice.two_pointers_and_binary_search.valid_palindrome",
+    "title": "Valid Palindrome",
+    "test": "check(s.isPalindrome(\"A man, a plan, a canal: Panama\")); check(!s.isPalindrome(\"race a car\")); check(s.isPalindrome(\".,\"));"
+  },
+  {
+    "package": "practice.two_pointers_and_binary_search.container_with_most_water",
+    "title": "Container With Most Water",
+    "test": "check(s.maxArea(new int[]{1,8,6,2,5,4,8,3,7})==49); check(s.maxArea(new int[]{1,1})==1);"
+  },
+  {
+    "package": "practice.two_pointers_and_binary_search.three_sum",
+    "title": "3Sum",
+    "test": "check(s.threeSum(new int[]{-1,0,1,2,-1,-4}).equals(Arrays.asList(Arrays.asList(-1,-1,2),Arrays.asList(-1,0,1)))); check(s.threeSum(new int[]{0,0,0,0}).size()==1);"
+  },
+  {
+    "package": "practice.two_pointers_and_binary_search.search_rotated_sorted_array",
+    "title": "Search in Rotated Sorted Array",
+    "test": "check(s.search(new int[]{4,5,6,7,0,1,2},0)==4); check(s.search(new int[]{4,5,6,7,0,1,2},3)==-1); check(s.search(new int[]{},1)==-1);"
+  },
+  {
+    "package": "practice.two_pointers_and_binary_search.median_of_two_sorted_arrays",
+    "title": "Median of Two Sorted Arrays",
+    "test": "check(s.findMedianSortedArrays(new int[]{1,3},new int[]{2})==2.0); check(s.findMedianSortedArrays(new int[]{1,2},new int[]{3,4})==2.5); check(s.findMedianSortedArrays(new int[]{},new int[]{1})==1.0); check(s.findMedianSortedArrays(new int[]{Integer.MAX_VALUE},new int[]{Integer.MAX_VALUE})==Integer.MAX_VALUE);"
+  },
+  {
+    "package": "practice.linked_lists_stacks_and_queues.reverse_linked_list",
+    "title": "Reverse Linked List",
+    "test": "Solution.ListNode a=new Solution.ListNode(1), b=new Solution.ListNode(2); a.next=b; check(s.reverseList(a)==b); check(b.next==a && a.next==null); check(s.reverseList(null)==null);"
+  },
+  {
+    "package": "practice.linked_lists_stacks_and_queues.linked_list_cycle",
+    "title": "Linked List Cycle",
+    "test": "Solution.ListNode a=new Solution.ListNode(1), b=new Solution.ListNode(1); a.next=b; check(!s.hasCycle(a)); b.next=a; check(s.hasCycle(a)); check(!s.hasCycle(null));"
+  },
+  {
+    "package": "practice.linked_lists_stacks_and_queues.valid_parentheses",
+    "title": "Valid Parentheses",
+    "test": "check(s.isValid(\"({[]})\")); check(!s.isValid(\"([)]\")); check(!s.isValid(\"]\")); check(s.isValid(\"\"));"
+  },
+  {
+    "package": "practice.linked_lists_stacks_and_queues.daily_temperatures",
+    "title": "Daily Temperatures",
+    "test": "check(Arrays.equals(s.dailyTemperatures(new int[]{73,74,75,71,69,72,76}),new int[]{1,1,4,2,1,1,0})); check(Arrays.equals(s.dailyTemperatures(new int[]{30,30}),new int[]{0,0}));"
+  },
+  {
+    "package": "practice.linked_lists_stacks_and_queues.lru_cache",
+    "title": "LRU Cache",
+    "test": "Solution.LRUCache c=new Solution.LRUCache(2); c.put(1,1); c.put(2,2); check(c.get(1)==1); c.put(3,3); check(c.get(2)==-1); c.put(1,7); c.put(4,4); check(c.get(3)==-1 && c.get(1)==7); Solution.LRUCache z=new Solution.LRUCache(0); z.put(1,1); check(z.get(1)==-1);"
+  },
+  {
+    "package": "practice.trees_and_binary_search_trees.maximum_depth",
+    "title": "Maximum Depth of Binary Tree",
+    "test": "Solution.TreeNode r=new Solution.TreeNode(1); r.left=new Solution.TreeNode(2); r.left.left=new Solution.TreeNode(4); check(s.maxDepth(r)==3); check(s.maxDepth(null)==0);"
+  },
+  {
+    "package": "practice.trees_and_binary_search_trees.level_order_traversal",
+    "title": "Binary Tree Level Order Traversal",
+    "test": "Solution.TreeNode r=new Solution.TreeNode(1); r.left=new Solution.TreeNode(2); r.right=new Solution.TreeNode(3); check(s.levelOrder(r).equals(Arrays.asList(Arrays.asList(1),Arrays.asList(2,3)))); check(s.levelOrder(null).isEmpty());"
+  },
+  {
+    "package": "practice.trees_and_binary_search_trees.validate_bst",
+    "title": "Validate Binary Search Tree",
+    "test": "Solution.TreeNode r=new Solution.TreeNode(5); r.left=new Solution.TreeNode(3); r.right=new Solution.TreeNode(8); check(s.isValidBST(r)); r.right.left=new Solution.TreeNode(4); check(!s.isValidBST(r)); check(s.isValidBST(new Solution.TreeNode(Integer.MIN_VALUE)));"
+  },
+  {
+    "package": "practice.trees_and_binary_search_trees.lowest_common_ancestor",
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "test": "Solution.TreeNode r=new Solution.TreeNode(3); r.left=new Solution.TreeNode(5); r.right=new Solution.TreeNode(1); r.left.left=new Solution.TreeNode(6); check(s.lowestCommonAncestor(r,r.left.left,r.right)==r); check(s.lowestCommonAncestor(r,r.left,r.left.left)==r.left);"
+  },
+  {
+    "package": "practice.trees_and_binary_search_trees.serialize_deserialize_tree",
+    "title": "Serialize and Deserialize Binary Tree",
+    "test": "Solution.TreeNode r=new Solution.TreeNode(-1); r.right=new Solution.TreeNode(2); String encoded=s.serialize(r); check(s.serialize(s.deserialize(encoded)).equals(encoded)); check(s.deserialize(s.serialize(null))==null);"
+  },
+  {
+    "package": "practice.graphs_and_union_find.number_of_islands",
+    "title": "Number of Islands",
+    "test": "check(s.numIslands(new char[][]{\"1100\".toCharArray(),\"1001\".toCharArray(),\"0011\".toCharArray()})==2); check(s.numIslands(new char[][]{\"10\".toCharArray(),\"01\".toCharArray()})==2); check(s.numIslands(new char[0][])==0);"
+  },
+  {
+    "package": "practice.graphs_and_union_find.clone_graph",
+    "title": "Clone Graph",
+    "test": "Solution.Node a=new Solution.Node(1), b=new Solution.Node(1); a.neighbors.add(b); b.neighbors.add(a); Solution.Node c=s.cloneGraph(a); check(c!=a && c.val==1); check(c.neighbors.get(0)!=b && c.neighbors.get(0)!=c); check(c.neighbors.get(0).neighbors.get(0)==c); check(s.cloneGraph(null)==null);"
+  },
+  {
+    "package": "practice.graphs_and_union_find.course_schedule",
+    "title": "Course Schedule",
+    "test": "check(s.canFinish(3,new int[][]{{1,0},{2,1}})); check(!s.canFinish(2,new int[][]{{1,0},{0,1}})); check(s.canFinish(3,new int[0][]));"
+  },
+  {
+    "package": "practice.graphs_and_union_find.accounts_merge",
+    "title": "Accounts Merge",
+    "test": "List<List<String>> a=Arrays.asList(Arrays.asList(\"Alex\",\"x@e\",\"y@e\"),Arrays.asList(\"Alex\",\"y@e\",\"z@e\"),Arrays.asList(\"Alex\",\"other@e\")); List<List<String>> g=s.accountsMerge(a); check(g.size()==2); check(g.contains(Arrays.asList(\"Alex\",\"x@e\",\"y@e\",\"z@e\")));"
+  },
+  {
+    "package": "practice.graphs_and_union_find.network_delay_time",
+    "title": "Network Delay Time",
+    "test": "check(s.networkDelayTime(new int[][]{{1,2,2},{1,3,5},{2,3,1}},3,1)==3); check(s.networkDelayTime(new int[][]{{1,2,1}},3,1)==-1); check(s.networkDelayTime(new int[0][],1,1)==0);"
+  },
+  {
+    "package": "practice.heaps_intervals_and_greedy.kth_largest_element",
+    "title": "Kth Largest Element in an Array",
+    "test": "check(s.findKthLargest(new int[]{3,2,1,5,6,4},2)==5); check(s.findKthLargest(new int[]{2,2,1},2)==2);"
+  },
+  {
+    "package": "practice.heaps_intervals_and_greedy.top_k_frequent_elements",
+    "title": "Top K Frequent Elements",
+    "test": "int[] a=s.topKFrequent(new int[]{1,1,1,2,2,3},2); Arrays.sort(a); check(Arrays.equals(a,new int[]{1,2})); check(s.topKFrequent(new int[]{},0).length==0);"
+  },
+  {
+    "package": "practice.heaps_intervals_and_greedy.merge_intervals",
+    "title": "Merge Intervals",
+    "test": "check(Arrays.deepEquals(s.merge(new int[][]{{1,3},{2,6},{8,10}}),new int[][]{{1,6},{8,10}})); check(Arrays.deepEquals(s.merge(new int[][]{{1,4},{4,5}}),new int[][]{{1,5}})); check(s.merge(new int[0][]).length==0);"
+  },
+  {
+    "package": "practice.heaps_intervals_and_greedy.meeting_rooms_ii",
+    "title": "Meeting Rooms II",
+    "test": "check(s.minMeetingRooms(new int[][]{{9,10},{9,12},{10,11}})==2); check(s.minMeetingRooms(new int[][]{{1,2},{2,3}})==1); check(s.minMeetingRooms(new int[0][])==0);"
+  },
+  {
+    "package": "practice.heaps_intervals_and_greedy.task_scheduler",
+    "title": "Task Scheduler",
+    "test": "check(s.leastInterval(\"AAABBB\".toCharArray(),2)==8); check(s.leastInterval(\"AAABBB\".toCharArray(),0)==6); check(s.leastInterval(new char[0],3)==0);"
+  },
+  {
+    "package": "practice.dynamic_programming.climbing_stairs",
+    "title": "Climbing Stairs",
+    "test": "check(s.climbStairs(0)==1); check(s.climbStairs(4)==5); check(s.climbStairs(10)==89);"
+  },
+  {
+    "package": "practice.dynamic_programming.house_robber",
+    "title": "House Robber",
+    "test": "check(s.rob(new int[]{2,7,9,3,1})==12); check(s.rob(new int[]{})==0); check(s.rob(new int[]{2,1,1,2})==4);"
+  },
+  {
+    "package": "practice.dynamic_programming.coin_change",
+    "title": "Coin Change",
+    "test": "check(s.coinChange(new int[]{1,2,5},11)==3); check(s.coinChange(new int[]{2},3)==-1); check(s.coinChange(new int[]{},0)==0);"
+  },
+  {
+    "package": "practice.dynamic_programming.longest_increasing_subsequence",
+    "title": "Longest Increasing Subsequence",
+    "test": "check(s.lengthOfLIS(new int[]{10,9,2,5,3,7,101,18})==4); check(s.lengthOfLIS(new int[]{2,2,2})==1); check(s.lengthOfLIS(new int[]{})==0);"
+  },
+  {
+    "package": "practice.dynamic_programming.word_break",
+    "title": "Word Break",
+    "test": "check(s.wordBreak(\"leetcode\",Arrays.asList(\"leet\",\"code\"))); check(!s.wordBreak(\"catsandog\",Arrays.asList(\"cats\",\"dog\",\"sand\",\"and\",\"cat\"))); check(s.wordBreak(\"aaaaaaa\",Arrays.asList(\"aaaa\",\"aaa\"))); check(s.wordBreak(\"\",Collections.emptyList()));"
+  },
+  {
+    "package": "practice.backtracking_recursion_and_tries.subsets",
+    "title": "Subsets",
+    "test": "List<List<Integer>> a=s.subsets(new int[]{1,2}); check(a.size()==4 && new HashSet<>(a).size()==4); check(a.contains(Arrays.asList(1,2))); check(s.subsets(new int[]{}).equals(Arrays.asList(Collections.emptyList())));"
+  },
+  {
+    "package": "practice.backtracking_recursion_and_tries.combination_sum",
+    "title": "Combination Sum",
+    "test": "check(s.combinationSum(new int[]{2,3,6,7},7).equals(Arrays.asList(Arrays.asList(2,2,3),Arrays.asList(7)))); check(s.combinationSum(new int[]{2},3).isEmpty()); check(s.combinationSum(new int[]{},0).size()==1);"
+  },
+  {
+    "package": "practice.backtracking_recursion_and_tries.permutations",
+    "title": "Permutations",
+    "test": "List<List<Integer>> a=s.permute(new int[]{1,2,3}); check(a.size()==6 && new HashSet<>(a).size()==6); check(s.permute(new int[]{}).size()==1);"
+  },
+  {
+    "package": "practice.backtracking_recursion_and_tries.word_search",
+    "title": "Word Search",
+    "test": "char[][] b={\"ABCE\".toCharArray(),\"SFCS\".toCharArray(),\"ADEE\".toCharArray()}; check(s.exist(b,\"ABCCED\")); check(!s.exist(b,\"ABCB\")); check(Arrays.equals(b[0],\"ABCE\".toCharArray())); check(s.exist(new char[0][],\"\"));"
+  },
+  {
+    "package": "practice.backtracking_recursion_and_tries.implement_trie",
+    "title": "Implement Trie",
+    "test": "Solution.Trie t=new Solution.Trie(); t.insert(\"apple\"); check(t.search(\"apple\")); check(!t.search(\"app\") && t.startsWith(\"app\")); t.insert(\"app\"); check(t.search(\"app\")); check(!t.startsWith(\"bat\")); t.insert(\"\"); check(t.search(\"\"));"
+  }
+]
