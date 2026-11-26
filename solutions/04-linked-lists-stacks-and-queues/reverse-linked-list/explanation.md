@@ -1,5 +1,7 @@
 # Reverse Linked List
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **LOW** | Pattern: **Pointer manipulation**

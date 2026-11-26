@@ -29,3 +29,5 @@ Clarify traffic, latency, consistency, availability, and scope before proposing 
 **Expected behavior:** The service records the attempt, retries with backoff, and exposes the eventual result.
 
 Prepare requirements, APIs, data model, architecture, failure handling, and trade-offs. Then compare with the [reference approach](solution.md) and [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

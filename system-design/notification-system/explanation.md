@@ -1,5 +1,7 @@
 # Design a Notification System: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 API -> Database + Outbox -> Queue -> Channel workers -> Providers
                             |                            |

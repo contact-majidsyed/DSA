@@ -1,5 +1,7 @@
 # Design a URL Shortener: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 Client -> Redirect API -> Cache
                        -> Mapping store (on miss)

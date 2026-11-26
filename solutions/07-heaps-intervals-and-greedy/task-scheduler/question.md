@@ -33,3 +33,5 @@ Output: 6
 No idle slots are necessary.
 
 Try solving the problem before opening the [Java solution](Solution.java) or [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

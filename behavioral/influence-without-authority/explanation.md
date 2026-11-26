@@ -1,5 +1,7 @@
 # Describe a time you influenced a team without authority.: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 Context -> Your responsibility -> Your actions -> Evidence of outcome
                                       |                   |

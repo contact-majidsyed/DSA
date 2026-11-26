@@ -33,3 +33,5 @@ Output: false
 The value 4 lies in the right subtree of 5 but is smaller than 5.
 
 Try solving the problem before opening the [Java solution](Solution.java) or [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

@@ -1,5 +1,7 @@
 # Minimum Window Substring
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **HIGH** | Pattern: **Sliding window + frequency map**

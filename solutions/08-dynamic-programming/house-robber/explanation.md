@@ -1,5 +1,7 @@
 # House Robber
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Take / skip DP**

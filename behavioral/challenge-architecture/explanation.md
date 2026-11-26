@@ -1,5 +1,7 @@
 # Tell me about a time you challenged an existing architecture.: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 Context -> Your responsibility -> Your actions -> Evidence of outcome
                                       |                   |

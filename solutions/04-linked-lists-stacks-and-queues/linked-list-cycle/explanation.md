@@ -1,5 +1,7 @@
 # Linked List Cycle
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **LOW** | Pattern: **Fast / slow pointers**

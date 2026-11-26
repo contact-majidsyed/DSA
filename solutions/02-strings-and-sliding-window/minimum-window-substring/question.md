@@ -33,3 +33,5 @@ Output: ""
 One a cannot satisfy the two required occurrences.
 
 Try solving the problem before opening the [Java solution](Solution.java) or [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

@@ -29,3 +29,5 @@ Clarify traffic, latency, consistency, availability, and scope before proposing 
 **Expected behavior:** The service uses a replica or returns a controlled miss/error according to its contract; stale-read and recovery behavior must be explained.
 
 Prepare requirements, APIs, data model, architecture, failure handling, and trade-offs. Then compare with the [reference approach](solution.md) and [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

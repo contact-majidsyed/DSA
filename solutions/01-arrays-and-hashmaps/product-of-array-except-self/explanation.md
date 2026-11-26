@@ -1,5 +1,7 @@
 # Product of Array Except Self
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Prefix / suffix**

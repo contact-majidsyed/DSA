@@ -1,5 +1,7 @@
 # Search in Rotated Sorted Array
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Modified binary search**

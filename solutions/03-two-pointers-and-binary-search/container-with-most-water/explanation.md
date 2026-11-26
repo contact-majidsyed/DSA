@@ -1,5 +1,7 @@
 # Container With Most Water
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Greedy two pointers**

@@ -1,5 +1,7 @@
 # Design a Chat Application: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 Sender -> WebSocket gateway -> Conversation partition -> Message store
                                          |

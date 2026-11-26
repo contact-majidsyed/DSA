@@ -33,3 +33,5 @@ Output: [["Alex","a@example.com"],["Alex","b@example.com"]]
 Matching names alone do not justify merging.
 
 Try solving the problem before opening the [Java solution](Solution.java) or [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

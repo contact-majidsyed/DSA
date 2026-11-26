@@ -1,5 +1,7 @@
 # How do you prioritize technical debt?: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 Context -> Your responsibility -> Your actions -> Evidence of outcome
                                       |                   |

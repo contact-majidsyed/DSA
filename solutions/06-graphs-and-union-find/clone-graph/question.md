@@ -33,3 +33,5 @@ Output: null
 An empty graph has no node to clone.
 
 Try solving the problem before opening the [Java solution](Solution.java) or [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

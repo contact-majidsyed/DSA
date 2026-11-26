@@ -1,5 +1,7 @@
 # Tell me about a project that failed.: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 Context -> Your responsibility -> Your actions -> Evidence of outcome
                                       |                   |

@@ -1,5 +1,7 @@
 # Serialize and Deserialize Binary Tree
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **HIGH** | Pattern: **Preorder encoding**

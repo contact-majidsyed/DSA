@@ -1,5 +1,7 @@
 # Accounts Merge
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Union Find**

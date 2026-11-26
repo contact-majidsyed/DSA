@@ -1,5 +1,7 @@
 # Describe a trade-off between speed and quality.: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 Context -> Your responsibility -> Your actions -> Evidence of outcome
                                       |                   |

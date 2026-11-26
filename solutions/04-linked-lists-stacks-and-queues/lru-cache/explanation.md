@@ -1,5 +1,7 @@
 # LRU Cache
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **HIGH** | Pattern: **HashMap + doubly linked list**

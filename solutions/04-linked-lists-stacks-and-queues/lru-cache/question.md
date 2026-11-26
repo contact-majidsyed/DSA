@@ -33,3 +33,5 @@ Output: get results: [-1]
 A zero-capacity cache retains no entries.
 
 Try solving the problem before opening the [Java solution](Solution.java) or [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

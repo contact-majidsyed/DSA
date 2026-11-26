@@ -1,5 +1,7 @@
 # Maximum Subarray
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md) | [Java solution](Solution.java)
 
 Difficulty: **MEDIUM** | Pattern: **Kadane dynamic programming**

@@ -1,5 +1,7 @@
 # Group Anagrams
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Frequency signature + HashMap**

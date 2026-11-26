@@ -1,5 +1,7 @@
 # Kth Largest Element in an Array
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Bounded min-heap**

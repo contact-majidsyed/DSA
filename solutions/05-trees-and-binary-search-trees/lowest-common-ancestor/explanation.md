@@ -1,5 +1,7 @@
 # Lowest Common Ancestor of a Binary Tree
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Recursive DFS**

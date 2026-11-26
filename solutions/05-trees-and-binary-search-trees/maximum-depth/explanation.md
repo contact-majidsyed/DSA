@@ -1,5 +1,7 @@
 # Maximum Depth of Binary Tree
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **LOW** | Pattern: **Recursive DFS**

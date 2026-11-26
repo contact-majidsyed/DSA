@@ -29,3 +29,5 @@ An unfamiliar technical problem requires learning, prototyping, and coordinating
 If you have a similar real example, explain your actions, why you chose them, what happened, and what you would change.
 
 Use the [answer framework](answer-framework.md) and [explanation](explanation.md) after selecting your example.
+
+[Quick recall hint](trick.md) — open after trying the question.

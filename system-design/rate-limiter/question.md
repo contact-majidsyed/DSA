@@ -29,3 +29,5 @@ Clarify traffic, latency, consistency, availability, and scope before proposing 
 **Expected behavior:** The request is allowed if no other request has consumed the new token.
 
 Prepare requirements, APIs, data model, architecture, failure handling, and trade-offs. Then compare with the [reference approach](solution.md) and [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

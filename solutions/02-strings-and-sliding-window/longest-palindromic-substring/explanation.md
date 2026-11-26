@@ -1,5 +1,7 @@
 # Longest Palindromic Substring
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Expand around center**

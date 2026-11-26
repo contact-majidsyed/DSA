@@ -1,5 +1,7 @@
 # Number of Islands
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Iterative DFS**

@@ -1,5 +1,7 @@
 # Word Search
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Grid DFS + backtracking**

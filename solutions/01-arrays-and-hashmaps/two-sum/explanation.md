@@ -1,5 +1,7 @@
 # Two Sum
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **LOW** | Pattern: **HashMap**

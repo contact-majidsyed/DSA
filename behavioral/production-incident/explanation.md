@@ -1,5 +1,7 @@
 # Tell me about a production incident you handled.: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 Context -> Your responsibility -> Your actions -> Evidence of outcome
                                       |                   |

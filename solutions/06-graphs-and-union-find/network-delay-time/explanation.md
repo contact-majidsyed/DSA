@@ -1,5 +1,7 @@
 # Network Delay Time
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **HIGH** | Pattern: **Dijkstra + min-heap**

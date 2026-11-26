@@ -1,5 +1,7 @@
 # Coin Change
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Unbounded amount DP**

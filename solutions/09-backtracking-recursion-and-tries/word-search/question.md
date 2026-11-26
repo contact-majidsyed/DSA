@@ -33,3 +33,5 @@ Output: false
 Completing this path would require reusing a B cell.
 
 Try solving the problem before opening the [Java solution](Solution.java) or [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

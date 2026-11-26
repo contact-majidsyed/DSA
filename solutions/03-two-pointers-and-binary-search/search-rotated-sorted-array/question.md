@@ -33,3 +33,5 @@ Output: -1
 The target is not in the array.
 
 Try solving the problem before opening the [Java solution](Solution.java) or [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

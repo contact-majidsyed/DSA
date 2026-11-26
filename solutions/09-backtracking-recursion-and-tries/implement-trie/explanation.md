@@ -1,5 +1,7 @@
 # Implement Trie
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Prefix tree**

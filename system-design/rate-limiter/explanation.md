@@ -1,5 +1,7 @@
 # Design a Rate Limiter: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 Request -> Gateway -> Atomic bucket check -> Allow -> Service
                                       \-> Deny (429)

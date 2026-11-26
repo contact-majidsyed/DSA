@@ -1,5 +1,7 @@
 # Combination Sum
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Backtracking with reuse**

@@ -1,5 +1,7 @@
 # Design a Distributed Cache: Explanation
 
+[Quick recall](trick.md)
+
 ```text
 Application -> Router / partition map
                  |       |       |

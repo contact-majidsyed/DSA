@@ -33,3 +33,5 @@ Output: root = [1,2,3]
 Reconstruction restores the original tree. Tree arrays here are level-order notation.
 
 Try solving the problem before opening the [Java solution](Solution.java) or [ASCII explanation](explanation.md).
+
+[Quick recall hint](trick.md) — open after trying the question.

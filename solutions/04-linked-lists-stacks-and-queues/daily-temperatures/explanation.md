@@ -1,5 +1,7 @@
 # Daily Temperatures
 
+[Quick recall](trick.md)
+
 [Question and examples](question.md)
 
 Difficulty: **MEDIUM** | Pattern: **Monotonic stack**
