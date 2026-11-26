@@ -215,54 +215,18 @@ i  value  old current  restart  extend  decision    new current  best
 8      4        1          4       5    extend           5        6
 ```
 
-## Run the commented debug solution
+## Read the code like a debugger
 
-[SolutionDebug.java](SolutionDebug.java) contains the two examples from the question. Comments beside the calculation lines show the stored values for each iteration of the first example. Running it prints each update for both examples and checks the expected return values.
+Open [SolutionDebug.java](SolutionDebug.java). It keeps the original algorithm and adds comments showing the values after each assignment. It has no print statements or `main` method.
 
-From the repository root:
+Pick one iteration, such as `i=3`, and follow its row through both comment tables:
 
-```sh
-javac -d /tmp/dsa-debug solutions/01-arrays-and-hashmaps/maximum-subarray/SolutionDebug.java
-java -cp /tmp/dsa-debug practice.arrays_and_hashmaps.maximum_subarray.SolutionDebug
-```
+1. Enter with `current=-2`, `best=1`, and `nums[3]=4`.
+2. Update `current`: `max(4, -2+4)` stores `4`. At this moment, `best` is still `1`.
+3. Update `best`: `max(1, 4)` stores `4`.
+4. Increment `i` to `4`, check the loop condition, and carry both stored values into the next visit.
 
-`restart` and `extend` are named separately to show the two operands of the original `Math.max` expression. Print statements display the state; they do not change the algorithm. In a debugger, pause after an assignment to see its newly stored value.
-
-## Print your own debug trace
-
-Paste this method inside a Java class. It follows the same calculation as the solution but names the two choices and prints them. Call it with `debugMaxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4});` from a `main` method or your IDE.
-
-```java
-public static long debugMaxSubArray(int[] nums) {
-    if (nums.length == 0) {
-        throw new IllegalArgumentException("Empty input");
-    }
-
-    long current = nums[0];
-    long best = nums[0];
-    System.out.printf("i=0 value=%d initialize current=%d best=%d%n",
-            nums[0], current, best);
-
-    for (int i = 1; i < nums.length; i++) {
-        long oldCurrent = current;
-        long restart = nums[i];
-        long extend = oldCurrent + nums[i];
-        String decision = restart > extend ? "restart"
-                : restart < extend ? "extend" : "tie: either";
-
-        current = Math.max(restart, extend);
-        best = Math.max(best, current);
-
-        System.out.printf(
-                "i=%d value=%d old=%d restart=%d extend=%d -> %s; current=%d best=%d%n",
-                i, nums[i], oldCurrent, restart, extend, decision, current, best);
-    }
-    System.out.println("Answer = " + best);
-    return best;
-}
-```
-
-In a debugger, place a breakpoint on the `current = Math.max(...)` line. Watch `i`, `nums[i]`, `current`, and `best`. Step over once to see the new current, then once more to see whether best changes. There is one moving index; no second pointer or nested search is needed.
+The first example has a row for every iteration. A second comment block traces the all-negative example. If you use an IDE debugger, pause after an assignment to inspect its new value; before it executes, the variable still holds its old value.
 
 ## Why does this find the answer?
 

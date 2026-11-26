@@ -1,102 +1,96 @@
 package practice.arrays_and_hashmaps.maximum_subarray;
 
-import java.util.Arrays;
-
 /**
- * Read the comments for a fixed walkthrough, or run main to print each update.
- * Both inputs and expected outputs come from question.md.
- * The calculation is the same as Solution.java; extra variables expose the choices.
+ * The original algorithm, with a debugger walkthrough written in comments.
+ * No logging, extra tracking variables, or main method.
+ * Read one iteration down through both assignments, then move to the next row.
  */
 public class SolutionDebug {
     public long maxSubArray(int[] nums) {
-        // Example 1: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]. Expected return: 6.
-        // Example 2: nums = [-5, -2, -7]. Expected return: -2.
-        // nums is never changed. Comments below trace Example 1.
-        if (nums.length == 0) {
-            // Example 1: length = 9, so this branch is skipped.
-            throw new IllegalArgumentException("Empty input");
-        }
+        // EXAMPLE 1 from question.md
+        // index:  0   1   2   3   4   5   6   7   8
+        // nums:  -2   1  -3   4  -1   2   1  -5   4
+        // Expected return: 6, from [4, -1, 2, 1].
 
-        long current = nums[0];
-        // current = -2: best sum of a nonempty stretch ending at index 0.
-        System.out.printf("current = nums[0] -> current=%d%n", current);
+        // nums.length = 9 -> condition is false -> continue below.
+        if (nums.length == 0) throw new IllegalArgumentException("Empty input");
 
-        long best = nums[0];
-        // best = -2: largest sum found anywhere so far.
-        System.out.printf("best = nums[0]    -> best=%d%n", best);
+        long current = nums[0], best = nums[0];
+        // AFTER this line: current = -2, best = -2.
+        // current = largest sum of a stretch that MUST end at the visited index.
+        // best    = largest sum found ANYWHERE so far.
+        // Start from nums[0], not 0: choosing no elements is not allowed.
 
         for (int i = 1; i < nums.length; i++) {
-            // i visits 1, 2, 3, 4, 5, 6, 7, 8. At i=9, 9<9 is false: stop.
-            // nums[i]: 1, -3, 4, -1, 2, 1, -5, 4 respectively.
-            System.out.printf("%nLOOP: i=%d, i < %d is true, nums[i]=%d%n",
-                    i, nums.length, nums[i]);
+            // LOOP FLOW: check i < 9 -> update current -> update best -> i++.
+            // First visit: i=1, nums[i]=1, current=-2, best=-2.
+            // Index 0 was already handled by initialization.
 
-            long restart = nums[i];
-            // Take just this number. Values after this line:
-            // i:       1   2   3   4   5   6   7   8
-            // restart: 1  -3   4  -1   2   1  -5   4
-            System.out.printf("restart = nums[i] -> restart=%d%n", restart);
+            current = Math.max(nums[i], current + nums[i]);
+            //                 start here   extend the previous stretch
+            // The right side uses OLD current; assignment stores NEW current.
+            //
+            // Pause AFTER this line on each visit:
+            // i  nums[i]  old current  calculation          new current  choice
+            // 1     1         -2      max( 1, -2 +  1)          1       start
+            // 2    -3          1      max(-3,  1 + -3)         -2       extend
+            // 3     4         -2      max( 4, -2 +  4)          4       start
+            // 4    -1          4      max(-1,  4 + -1)          3       extend
+            // 5     2          3      max( 2,  3 +  2)          5       extend
+            // 6     1          5      max( 1,  5 +  1)          6       extend
+            // 7    -5          6      max(-5,  6 + -5)          1       extend
+            // 8     4          1      max( 4,  1 +  4)          5       extend
+            //
+            // At i=3, discard the old negative sum and start at 4.
+            // At i=4, KEEP -1: extending gives 3, better than starting at -1.
+            // best has NOT changed yet. The next line updates it.
 
-            long extend = current + nums[i];
-            // This uses OLD current, before the update below.
-            // i=1: -2 +  1 = -1       i=5:  3 +  2 = 5
-            // i=2:  1 + -3 = -2       i=6:  5 +  1 = 6
-            // i=3: -2 +  4 =  2       i=7:  6 + -5 = 1
-            // i=4:  4 + -1 =  3       i=8:  1 +  4 = 5
-            System.out.printf("extend = current + nums[i] -> %d + (%d) = %d%n",
-                    current, nums[i], extend);
-
-            // Print the operands BEFORE replacing current.
-            System.out.printf("current = Math.max(restart, extend) -> max(%d, %d)%n",
-                    restart, extend);
-            current = Math.max(restart, extend);
-            // Values AFTER this assignment:
-            // i:       1   2   3   4   5   6   7   8
-            // current: 1  -2   4   3   5   6   1   5
-            // Restart at i=1 and i=3. Extend at every other visited index.
-            System.out.printf("  stored current=%d%n", current);
-
-            // Print old best and NEW current before updating best.
-            System.out.printf("best = Math.max(best, current) -> max(%d, %d)%n",
-                    best, current);
             best = Math.max(best, current);
-            // Values AFTER this assignment:
-            // i:       1   2   3   4   5   6   7   8
-            // best:    1   1   4   4   5   6   6   6
-            // At i=7, current falls to 1, but best keeps the earlier record of 6.
-            System.out.printf("  stored best=%d%n", best);
+            // This line uses NEW current from the assignment above.
+            //
+            // Pause AFTER this line on the SAME visit:
+            // i   old best   new current   calculation    stored best
+            // 1      -2           1        max(-2, 1)          1
+            // 2       1          -2        max( 1,-2)          1
+            // 3       1           4        max( 1, 4)          4
+            // 4       4           3        max( 4, 3)          4
+            // 5       4           5        max( 4, 5)          5
+            // 6       5           6        max( 5, 6)          6
+            // 7       6           1        max( 6, 1)          6
+            // 8       6           5        max( 6, 5)          6
+            //
+            // At i=7, the moving stretch is [4,-1,2,1,-5], sum=1.
+            // best still remembers [4,-1,2,1], sum=6.
+            // These stretches are illustrations, not extra arrays in the code.
+
+            // END OF VISIT: i++ runs, then the loop condition is checked again.
+            // Example: after i=1, carry current=1 and best=1 into i=2.
+            // After i=8, i becomes 9; 9 < 9 is false, so leave the loop.
         }
 
-        // Example 1: current=5, best=6. Return best, not current.
-        // Example 2: current=-7, best=-2. Return -2, not zero.
-        // The loop-local i, restart, and extend are now out of scope.
-        System.out.printf("%nLOOP FINISHED: current=%d, best=%d%n", current, best);
-        System.out.printf("return best -> %d%n", best);
-        return best;
+        // AFTER THE LOOP: current=5, best=6; loop-local i is out of scope.
+        // current describes the best stretch ending at the FINAL element.
+        // best remembers the winner even though it ended earlier, at index 6.
+        return best; // Returns 6 to the caller. Nothing is printed.
     }
 
-    public static void main(String[] args) {
-        SolutionDebug debug = new SolutionDebug();
-        // debug now refers to the object whose method prints the trace.
-
-        int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-        // nums holds question.md's first example input.
-        long expected = 6;
-        // expected is only for checking the result; the algorithm never uses it.
-        System.out.println("EXAMPLE 1: " + Arrays.toString(nums));
-        long actual = debug.maxSubArray(nums);
-        // The method has finished: actual=6, expected=6; nums is unchanged.
-        System.out.printf("Expected=%d, actual=%d%n", expected, actual);
-        if (actual != expected) throw new AssertionError("Example 1 failed");
-
-        nums = new int[]{-5, -2, -7};
-        // nums now refers to question.md's second example input.
-        expected = -2;
-        // All-negative input: the answer must still contain at least one number.
-        System.out.println("\nEXAMPLE 2: " + Arrays.toString(nums));
-        actual = debug.maxSubArray(nums);
-        // The method has finished: actual=-2, expected=-2; nums is unchanged.
-        System.out.printf("Expected=%d, actual=%d%n", expected, actual);
-        if (actual != expected) throw new AssertionError("Example 2 failed");
-    }
+    /*
+     * EXAMPLE 2 from question.md: nums = [-5, -2, -7], expected return = -2.
+     * The SAME method runs; this is a second walkthrough, not extra code.
+     *
+     * Initialize: current=-5, best=-5.
+     *
+     * i=1, nums[i]=-2:
+     *   current = max(-2, -5 + -2) = -2   -> start fresh
+     *   best    = max(-5, -2)      = -2   -> save the new record
+     *   i++ -> 2; 2 < 3 is true -> next visit
+     *
+     * i=2, nums[i]=-7:
+     *   current = max(-7, -2 + -7) = -7   -> start fresh
+     *   best    = max(-2, -7)      = -2   -> keep the earlier record
+     *   i++ -> 3; 3 < 3 is false -> leave the loop
+     *
+     * Return best = -2. Returning current would give -7, which is wrong.
+     * Initializing best to 0 would also be wrong: the subarray must be nonempty.
+     */
 }
