@@ -14,18 +14,23 @@ An undated Java study collection: 45 coding questions in nine sections, five sys
 solutions/
   01-arrays-and-hashmaps/
     group-anagrams/
+      question.md
       Solution.java
       explanation.md
   ... eight more topic sections
 system-design/<question>/
+  question.md
   solution.md
   explanation.md
 behavioral/<question>/
+  question.md
   answer-framework.md
   explanation.md
 notes/
 tests/
 ```
+
+Start with `question.md` in each problem folder for the prompt, input/output descriptions, and two examples. Design and behavioral prompts use example scenarios instead of a single exact output.
 
 Every coding explanation includes the problem, a short ASCII trace, implementation reasoning, complexity, assumptions, and edge cases. Code uses unique Java packages so all 45 classes can compile together. Linked-list, tree, graph, cache, and trie types are nested inside their solution class to keep each question self-contained.
 

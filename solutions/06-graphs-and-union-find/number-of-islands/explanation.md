@@ -1,5 +1,7 @@
 # Number of Islands
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Iterative DFS**
 
 ## Problem

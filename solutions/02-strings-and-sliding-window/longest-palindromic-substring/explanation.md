@@ -1,5 +1,7 @@
 # Longest Palindromic Substring
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Expand around center**
 
 ## Problem

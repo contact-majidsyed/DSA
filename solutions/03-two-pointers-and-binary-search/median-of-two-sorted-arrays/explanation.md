@@ -1,5 +1,7 @@
 # Median of Two Sorted Arrays
 
+[Question and examples](question.md)
+
 Difficulty: **HIGH** | Pattern: **Binary search partition**
 
 ## Problem

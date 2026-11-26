@@ -1,5 +1,7 @@
 # Minimum Window Substring
 
+[Question and examples](question.md)
+
 Difficulty: **HIGH** | Pattern: **Sliding window + frequency map**
 
 ## Problem

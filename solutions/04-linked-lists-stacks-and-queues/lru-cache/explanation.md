@@ -1,5 +1,7 @@
 # LRU Cache
 
+[Question and examples](question.md)
+
 Difficulty: **HIGH** | Pattern: **HashMap + doubly linked list**
 
 ## Problem

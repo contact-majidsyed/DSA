@@ -1,5 +1,7 @@
 # Daily Temperatures
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Monotonic stack**
 
 ## Problem

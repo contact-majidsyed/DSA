@@ -1,5 +1,7 @@
 # Group Anagrams
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Frequency signature + HashMap**
 
 ## Problem

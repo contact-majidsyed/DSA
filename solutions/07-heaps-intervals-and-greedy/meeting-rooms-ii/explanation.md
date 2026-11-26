@@ -1,5 +1,7 @@
 # Meeting Rooms II
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Sorting + min-heap**
 
 ## Problem

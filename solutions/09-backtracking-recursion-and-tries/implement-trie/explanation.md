@@ -1,5 +1,7 @@
 # Implement Trie
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Prefix tree**
 
 ## Problem

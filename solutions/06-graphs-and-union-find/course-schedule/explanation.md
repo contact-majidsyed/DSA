@@ -1,5 +1,7 @@
 # Course Schedule
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Topological sort**
 
 ## Problem

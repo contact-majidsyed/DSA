@@ -1,5 +1,7 @@
 # Maximum Subarray
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Kadane dynamic programming**
 
 ## Problem

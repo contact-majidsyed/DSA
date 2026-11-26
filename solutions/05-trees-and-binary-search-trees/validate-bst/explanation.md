@@ -1,5 +1,7 @@
 # Validate Binary Search Tree
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **DFS with bounds**
 
 ## Problem

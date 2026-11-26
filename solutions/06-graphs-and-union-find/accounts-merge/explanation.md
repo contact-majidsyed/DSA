@@ -1,5 +1,7 @@
 # Accounts Merge
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Union Find**
 
 ## Problem

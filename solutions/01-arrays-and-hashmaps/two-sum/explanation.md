@@ -1,5 +1,7 @@
 # Two Sum
 
+[Question and examples](question.md)
+
 Difficulty: **LOW** | Pattern: **HashMap**
 
 ## Problem

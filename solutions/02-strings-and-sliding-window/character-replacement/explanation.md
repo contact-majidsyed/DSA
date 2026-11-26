@@ -1,5 +1,7 @@
 # Longest Repeating Character Replacement
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Sliding window**
 
 ## Problem

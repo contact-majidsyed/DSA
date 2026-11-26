@@ -1,5 +1,7 @@
 # Merge Intervals
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Sorting**
 
 ## Problem

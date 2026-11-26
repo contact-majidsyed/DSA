@@ -1,5 +1,7 @@
 # Coin Change
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Unbounded amount DP**
 
 ## Problem

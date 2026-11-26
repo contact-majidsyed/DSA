@@ -1,5 +1,7 @@
 # Subarray Sum Equals K
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Prefix sum + frequency map**
 
 ## Problem

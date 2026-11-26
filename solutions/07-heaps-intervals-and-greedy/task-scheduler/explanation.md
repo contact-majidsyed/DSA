@@ -1,5 +1,7 @@
 # Task Scheduler
 
+[Question and examples](question.md)
+
 Difficulty: **HIGH** | Pattern: **Greedy frequency formula**
 
 ## Problem

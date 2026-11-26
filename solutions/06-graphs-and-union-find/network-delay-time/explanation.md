@@ -1,5 +1,7 @@
 # Network Delay Time
 
+[Question and examples](question.md)
+
 Difficulty: **HIGH** | Pattern: **Dijkstra + min-heap**
 
 ## Problem

@@ -1,5 +1,7 @@
 # Valid Palindrome
 
+[Question and examples](question.md)
+
 Difficulty: **LOW** | Pattern: **Two pointers**
 
 ## Problem

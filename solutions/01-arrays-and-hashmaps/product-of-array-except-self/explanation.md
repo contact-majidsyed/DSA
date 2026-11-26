@@ -1,5 +1,7 @@
 # Product of Array Except Self
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Prefix / suffix**
 
 ## Problem

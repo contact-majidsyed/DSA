@@ -1,5 +1,7 @@
 # Longest Substring Without Repeating Characters
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Sliding window**
 
 ## Problem

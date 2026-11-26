@@ -1,5 +1,7 @@
 # Valid Anagram
 
+[Question and examples](question.md)
+
 Difficulty: **LOW** | Pattern: **Frequency counter**
 
 ## Problem

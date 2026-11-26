@@ -1,5 +1,7 @@
 # 3Sum
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Sorting + two pointers**
 
 ## Problem

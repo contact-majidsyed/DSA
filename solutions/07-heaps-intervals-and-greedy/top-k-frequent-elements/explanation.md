@@ -1,5 +1,7 @@
 # Top K Frequent Elements
 
+[Question and examples](question.md)
+
 Difficulty: **MEDIUM** | Pattern: **Frequency map + bounded heap**
 
 ## Problem
