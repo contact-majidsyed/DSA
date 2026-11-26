@@ -215,6 +215,19 @@ i  value  old current  restart  extend  decision    new current  best
 8      4        1          4       5    extend           5        6
 ```
 
+## Run the commented debug solution
+
+[SolutionDebug.java](SolutionDebug.java) contains the two examples from the question. Comments beside the calculation lines show the stored values for each iteration of the first example. Running it prints each update for both examples and checks the expected return values.
+
+From the repository root:
+
+```sh
+javac -d /tmp/dsa-debug solutions/01-arrays-and-hashmaps/maximum-subarray/SolutionDebug.java
+java -cp /tmp/dsa-debug practice.arrays_and_hashmaps.maximum_subarray.SolutionDebug
+```
+
+`restart` and `extend` are named separately to show the two operands of the original `Math.max` expression. Print statements display the state; they do not change the algorithm. In a debugger, pause after an assignment to see its newly stored value.
+
 ## Print your own debug trace
 
 Paste this method inside a Java class. It follows the same calculation as the solution but names the two choices and prints them. Call it with `debugMaxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4});` from a `main` method or your IDE.
