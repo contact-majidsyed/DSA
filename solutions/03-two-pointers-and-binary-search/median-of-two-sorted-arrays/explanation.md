@@ -37,3 +37,5 @@ One array empty; odd/even totals; duplicates; extreme int values; both empty rej
 ## Practice aloud
 
 Explain why the algorithm is correct, trace the example, and state the complexity before coding it again without looking.
+
+[Comment-only debug walkthrough](SolutionDebug.java)

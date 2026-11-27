@@ -36,3 +36,5 @@ Duplicate values such as [3,3]; negative numbers; complement overflow.
 ## Practice aloud
 
 Explain why the algorithm is correct, trace the example, and state the complexity before coding it again without looking.
+
+[Comment-only debug walkthrough](SolutionDebug.java)

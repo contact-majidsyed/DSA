@@ -36,3 +36,5 @@ Empty input; abba; all identical. Java char uses UTF-16 code units, not full Uni
 ## Practice aloud
 
 Explain why the algorithm is correct, trace the example, and state the complexity before coding it again without looking.
+
+[Comment-only debug walkthrough](SolutionDebug.java)

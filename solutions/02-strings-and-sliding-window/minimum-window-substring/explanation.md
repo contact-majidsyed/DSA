@@ -36,3 +36,5 @@ Repeated required characters; empty t; no valid window; Java char semantics.
 ## Practice aloud
 
 Explain why the algorithm is correct, trace the example, and state the complexity before coding it again without looking.
+
+[Comment-only debug walkthrough](SolutionDebug.java)

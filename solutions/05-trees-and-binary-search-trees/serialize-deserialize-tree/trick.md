@@ -9,3 +9,5 @@
 **Remember:** Save the missing children too.
 
 [Question](question.md) · [Java solution](Solution.java) · [Full explanation](explanation.md)
+
+[Comment-only debug walkthrough](SolutionDebug.java)

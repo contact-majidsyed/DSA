@@ -39,3 +39,5 @@ Target zero returns one empty combination; no solution; empty candidates; only d
 ## Practice aloud
 
 Explain why the algorithm is correct, trace the example, and state the complexity before coding it again without looking.
+
+[Comment-only debug walkthrough](SolutionDebug.java)

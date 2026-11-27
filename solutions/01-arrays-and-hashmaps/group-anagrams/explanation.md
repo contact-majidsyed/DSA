@@ -41,3 +41,5 @@ Empty input; empty words; repeated words; lowercase a-z only. Use Arrays.toStrin
 ## Practice aloud
 
 Explain why the algorithm is correct, trace the example, and state the complexity before coding it again without looking.
+
+[Comment-only debug walkthrough](SolutionDebug.java)

@@ -9,3 +9,5 @@
 **Remember:** Space the busiest tasks; fill the gaps.
 
 [Question](question.md) · [Java solution](Solution.java) · [Full explanation](explanation.md)
+
+[Comment-only debug walkthrough](SolutionDebug.java)

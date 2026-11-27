@@ -9,3 +9,5 @@
 **Remember:** Move left forward only.
 
 [Question](question.md) · [Java solution](Solution.java) · [Full explanation](explanation.md)
+
+[Comment-only debug walkthrough](SolutionDebug.java)

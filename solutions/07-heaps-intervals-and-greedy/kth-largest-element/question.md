@@ -35,3 +35,5 @@ The two occurrences of 2 occupy the first two positions.
 Try solving the problem before opening the [Java solution](Solution.java) or [ASCII explanation](explanation.md).
 
 [Quick recall hint](trick.md) — open after trying the question.
+
+[Comment-only debug walkthrough](SolutionDebug.java)

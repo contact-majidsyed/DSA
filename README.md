@@ -17,6 +17,7 @@ solutions/
       question.md
       trick.md
       Solution.java
+      SolutionDebug.java
       explanation.md
   ... eight more topic sections
 system-design/<question>/
@@ -39,6 +40,12 @@ Use `trick.md` for a quick review: the key observation, a line from the solution
 
 Every coding explanation includes the problem, a short ASCII trace, implementation reasoning, complexity, assumptions, and edge cases. Code uses unique Java packages so all 45 classes can compile together. Linked-list, tree, graph, cache, and trie types are nested inside their solution class to keep each question self-contained.
 
+## Read the debug walkthroughs
+
+Each coding question has a `SolutionDebug.java` with the same algorithm and comments showing example values. No print statements or `main` method are added. Match each `LOOP START L1` with `LOOP END L1`; nested loops have their own labels. These mark the code boundaries: an early return, break, or continue can change the path through them. Recursive solutions identify base cases, calls, and how results return to the caller.
+
+Read the comments alongside the statements they describe. The examples come from `question.md`; map iteration order and other non-unique results are called out where relevant. Design and behavioral prompts have no Java loops, so they retain their existing guides.
+
 ## Run checks
 
 Install a JDK (Java 8 or newer) and Python 3, then run from the repository root:
@@ -47,7 +54,7 @@ Install a JDK (Java 8 or newer) and Python 3, then run from the repository root:
 python3 tests/run_tests.py
 ```
 
-The runner compiles every solution and runs assertions in a temporary directory. It checks examples and selected edge cases; it is not exhaustive verification.
+The runner checks that debug copies preserve the original code, compiles both versions, and runs the same assertions against each in a temporary directory. It checks examples and selected edge cases; it is not exhaustive verification.
 
 To compile one solution, for example:
 

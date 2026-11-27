@@ -41,3 +41,5 @@ Word versus prefix; duplicate insertion; empty word/prefix; lowercase a-z only.
 ## Practice aloud
 
 Explain why the algorithm is correct, trace the example, and state the complexity before coding it again without looking.
+
+[Comment-only debug walkthrough](SolutionDebug.java)

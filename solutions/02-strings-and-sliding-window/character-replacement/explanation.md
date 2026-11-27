@@ -35,3 +35,5 @@ Empty input; k = 0; k exceeds length; uppercase A-Z only.
 ## Practice aloud
 
 Explain why the algorithm is correct, trace the example, and state the complexity before coding it again without looking.
+
+[Comment-only debug walkthrough](SolutionDebug.java)

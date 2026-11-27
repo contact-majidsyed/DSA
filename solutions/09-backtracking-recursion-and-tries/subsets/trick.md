@@ -9,3 +9,5 @@
 **Remember:** Save the path; choose only forward.
 
 [Question](question.md) · [Java solution](Solution.java) · [Full explanation](explanation.md)
+
+[Comment-only debug walkthrough](SolutionDebug.java)

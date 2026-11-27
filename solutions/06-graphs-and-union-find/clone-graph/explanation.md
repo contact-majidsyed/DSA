@@ -36,3 +36,5 @@ Null; self-loop; cycles; nodes with equal values; no copied edge should point at
 ## Practice aloud
 
 Explain why the algorithm is correct, trace the example, and state the complexity before coding it again without looking.
+
+[Comment-only debug walkthrough](SolutionDebug.java)

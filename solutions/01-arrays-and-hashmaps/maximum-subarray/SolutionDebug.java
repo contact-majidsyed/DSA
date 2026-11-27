@@ -21,6 +21,7 @@ public class SolutionDebug {
         // best    = largest sum found ANYWHERE so far.
         // Start from nums[0], not 0: choosing no elements is not allowed.
 
+        // ===== LOOP START L1: for loop =====
         for (int i = 1; i < nums.length; i++) {
             // LOOP FLOW: check i < 9 -> update current -> update best -> i++.
             // First visit: i=1, nums[i]=1, current=-2, best=-2.
@@ -67,6 +68,7 @@ public class SolutionDebug {
             // Example: after i=1, carry current=1 and best=1 into i=2.
             // After i=8, i becomes 9; 9 < 9 is false, so leave the loop.
         }
+        // ===== LOOP END L1 =====
 
         // AFTER THE LOOP: current=5, best=6; loop-local i is out of scope.
         // current describes the best stretch ending at the FINAL element.
