@@ -4,6 +4,7 @@ An undated Java study collection: 45 coding questions in nine sections, five sys
 
 - [Study plan](STUDY_PLAN.md): topic sequence, priorities, practice routine, and mock interviews.
 - [Question bank](QUESTION_BANK.md): every question, difficulty, solution, and explanation.
+- [Two Sum visualizer](visualizer/README.md): interactive code, array, and map walkthrough; opening and hosting instructions.
 - [Java array printing](notes/java-array-printing.md): `Arrays.toString`, loops, and nested arrays.
 - [System design](system-design/README.md): reference approaches and separate ASCII explanations.
 - [Behavioral practice](behavioral/README.md): answer frameworks and separate explanations.

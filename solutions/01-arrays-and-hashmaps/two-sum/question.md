@@ -37,3 +37,5 @@ Try solving the problem before opening the [Java solution](Solution.java) or [AS
 [Quick recall hint](trick.md) — open after trying the question.
 
 [Comment-only debug walkthrough](SolutionDebug.java)
+
+[Interactive visualizer — opening instructions](../../../visualizer/README.md)

@@ -1,0 +1,20 @@
+{
+  "name": "dsa-step-visualizer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/trace.test.mjs",
+    "test:ui": "playwright test"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.8.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "esbuild": "^0.25.0"
+  }
+}
