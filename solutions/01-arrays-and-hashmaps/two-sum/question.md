@@ -38,4 +38,4 @@ Try solving the problem before opening the [Java solution](Solution.java) or [AS
 
 [Comment-only debug walkthrough](SolutionDebug.java)
 
-[Interactive visualizer — opening instructions](../../../visualizer/README.md)
+[Open interactive visualizer](https://contact-majidsyed.github.io/DSA/) · [Build and offline instructions](../../../visualizer/README.md)

@@ -4,9 +4,11 @@ A React + React Flow example that connects the Java code to a live array, variab
 
 ## Open it
 
-GitHub's file viewer shows source code; it cannot run React or HTML. The intended online host is GitHub Pages. **Publishing is not enabled yet:** GitHub rejected Pages for this private repository because the current account plan does not support it. The repository remains private.
+[Open the interactive Two Sum visualizer](https://contact-majidsyed.github.io/DSA/)
 
-Meanwhile, the GitHub Actions workflow builds a downloadable `two-sum-visualizer` artifact. After a successful run, download and unzip it, then open `two-sum.html` in your browser. The artifact is self-contained: no server, CDN, or internet connection is needed to run the lesson. GitHub authentication may be required to download artifacts from this private repository.
+GitHub's file viewer shows source code; the link above opens the working app on GitHub Pages.
+
+For offline use, download the `two-sum-visualizer` artifact from a successful GitHub Actions run, unzip it, and open `two-sum.html` in your browser. The artifact is self-contained: no server, CDN, or internet connection is needed to run the lesson. Downloading Actions artifacts requires signing in to GitHub.
 
 To build locally with Node.js 22 or newer:
 
@@ -42,15 +44,9 @@ For an already installed browser, set `DSA_CHROME_PATH` to its executable path. 
 
 ## GitHub Pages deployment
 
-The workflow in [visualizer.yml](../.github/workflows/visualizer.yml) builds and tests on changes to this app and uploads a downloadable artifact. It does not attempt unsupported Pages deployment automatically.
+The workflow in [visualizer.yml](../.github/workflows/visualizer.yml) builds, tests, and deploys changes to this app on `main`. It also uploads a downloadable offline artifact. Pages uses **GitHub Actions** as its source.
 
-Once a repository supports Pages:
-
-1. Set **Settings → Pages → Source** to **GitHub Actions**.
-2. Run the **Two Sum visualizer** workflow manually with **deploy_pages** enabled.
-3. Use the published deployment URL as the **Open interactive visualizer** link in the question.
-
-Only the built files in `visualizer/dist/` are published. A separate public repository containing this app and its workflow is another hosting option; that does not require making the DSA repository public.
+To redeploy manually, run **Two Sum visualizer** with **deploy_pages** enabled. Disable that input for a build-and-test-only run. Only the built files in `visualizer/dist/` are served by the website.
 
 ## Files
 
